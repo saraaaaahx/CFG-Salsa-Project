@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>UCL Salsa</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/home.css">
+  <meta name=“viewport” content="width=device-width,
+initial-scale=1.0">
+</head>
+
+
+<body>
+
+<!--background image-->
+  <div class="bg-image">
+
+<!--black box behind logo-->
+<div class="black-box"></div>
+
+<!-- slideshow-->
+<div class="slideshow-container">
+
+  <div style="text-align:center">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="https://scontent-lht6-1.xx.fbcdn.net/v/t1.0-9/25158095_1159164020882042_3586767880768546875_n.jpg?oh=1f8a7fddabb7cff4d9db9392e5a9488e&oe=5B1DDBD8" style="width:100%">
+
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="https://scontent-lht6-1.xx.fbcdn.net/v/t31.0-8/13346302_820736608058120_1560863215641502821_o.jpg?oh=ae2915d1bb44ccd97624061f776e6fd9&oe=5B0009AB" style="width:100%">
+
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="https://scontent-lht6-1.xx.fbcdn.net/v/t31.0-8/16602320_973110332820746_6119937528537637091_o.jpg?oh=27c81fc8d2d9a3cab049b3c122f29257&oe=5B15E55F" style="width:100%">
+
+</div>
+
+</div>
+<br>
+
+
+
+<!-- script for slideshow -->
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+
+
+
+
+
+
+    <div class='jumbotron bg-image'>
+      <div class="container">
+<div class="row logo">
+      <img src="https://scontent-lht6-1.xx.fbcdn.net/v/t1.0-9/19224978_1056315221166923_9153366868741145695_n.jpg?oh=ed6cbbdbb53a2c2154f467cdfd48abb1&oe=5B109CD2" width="400" height="400" class="salsa-logo"></p>
+            </div>
+
+
+        <!--social media tabs-->
+
+            <div class="sticky-container">
+                <ul class="sticky">
+                    <li>
+                        <img src="https://cdn1.iconfinder.com/data/icons/simple-icons/2048/facebook-2048-black.png" width="32" height="32">
+                        <a href="https://www.facebook.com/uclsalsa/" target="_blank"></a>
+                    </li>
+                    <li>
+                        <img src="http://cdn.mysitemyway.com/icons-watermarks/simple-black/foundation/foundation_mail/foundation_mail_simple-black_512x512.png" width="32" height="32">
+                        <a href="http://facebook.us12.list-manage.com/subscribe?u=c552f372877de66b52c0c1169&id=e764c54adc" target="_blank"></a>
+                    </li>
+                    <li>
+                        <img src="http://www.i2symbol.com/images/symbols/check/check_mark_u2713_icon_256x256.png" width="32" height="32">
+                        <a href="http://studentsunionucl.org/clubs-societies/salsa-society" target="_blank"></a>
+                    </li>
+
+                </ul>
+            </div>
+
+<div class="space"></div>
+
+</div>
+</div>
+
+
+
+
+
+<!-- buzz content -->
+
+<div class="text-center" id="buzz">
+
+  <div class="navigation">
+
+
+<!-- navbar -->
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Home</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="#schedule">Class timetable</a></li>
+              <li><a href="#">Socials</a></li>
+        <li><a href="file:///Users/Sarah/Dropbox/UNIVERSITY/Salsa%20Project/gallery.html">Gallery</a></li>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+      <li>
+          <form action="#buzz">
+            <button><i class="arrow down"></i></button>
+
+        </form>
+      </li>
+          </ul>
+      <!--
+      <form class="navbar-form navbar-left">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+    -->
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="https://open.spotify.com/user/saraaaaahxd/playlist/3eQrJiRHWWEELbn5YjYIIU?si=BcZy7RmlRAy8VBxQOQW3Qg">Playlist</a></li>
+        <li class="dropdown">
+          <a href="/Users/Sarah/Dropbox/UNIVERSITY/Salsa Project/reviews.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">The society's bar reviews<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+    <!--<span class="halflings halflings-sortable"> </span>-->
+
+  </div>
+
+
+
+    <h2><small>London Buzz</small><br />This weeks events</h2>
+        <div class="row">
+
+      <div class="col-md-6">
+        <span class="events">
+
+      <img src='http://www.bachataspice.com/images/BSAFacebookEventCover.png' class="img">
+          <p></p>
+            <p>Monday</p>
+        <p>Bachata Spice Amigos @ Tiger Tiger</p>
+
+      <small></small>
+        </span>
+    </div>
+
+        <div class="col-md-6">
+                <span class="events">
+
+      <img src='https://scontent-lhr3-1.xx.fbcdn.net/v/t1.0-9/15338790_1862207634010126_3804479716758654265_n.jpg?oh=c320dbc45fb42b1e69c21b77981a87b7&oe=5B05CDB2' class="img">
+        <p></p>
+            <p>Tuesday</p>
+          <p>Bachata Tuesdays at Bar Salsa with Ritmo Latino London</p>
+      <small></small>
+        </span>
+    </div>
+  </div>
+
+    <div class="row">
+
+      <div class="col-md-6">
+              <span class="events">
+
+        <img src='https://scontent-lhr3-1.xx.fbcdn.net/v/t1.0-9/21731111_1804098069630255_7192983144749184736_n.jpg?oh=010fd24f91d105ad96d24dbdf3989d78&oe=5B068D40' class="img" id="sbk">
+        <p></p>
+              <p>Wednesday</p>
+        <p>Salsa Bachata Kizomba at Bar Salsa Temple</p>
+      </span>
+      </div>
+
+          <div class="col-md-6">
+            <span class="events">
+
+          <img src='https://scontent-lhr3-1.xx.fbcdn.net/v/t1.0-9/13118853_1025710097504636_2352564715799022209_n.jpg?oh=29a6efb933b7d2c7c18b1a037dd797b6&oe=5B005194' class="img">
+              <p></p>
+              <p>Thursday</p>
+            <p>La Pollera/ Titos classes + party</p>
+          <small></small>
+            </span>
+          </div>
+
+</div>
+
+    <div class="row">
+      <div class="col-md-6">
+              <span class="events">
+
+    <img src='https://www.spccs1.co.uk/imager.aspx?w=768&i=Events/Flyers/b6e73903be0e4081b176a9394291f7d7.JPG' class="img">
+      <p></p>
+        <p>Friday</p>
+        <p>Friday night at Salsa!</p>
+    <small></small>
+      </span>
+    </div>
+
+    <div class="col-md-6">
+          <span class="events">
+
+    <img src='https://scontent-lhr3-1.xx.fbcdn.net/v/t1.0-9/28058665_1589223884524057_5326308758153014234_n.jpg?oh=dd40b3cbd35c83ccaccace649ad7b5d1&oe=5B109813' class="img" id="sbk">
+    <p></p>
+            <p>Saturday</p>
+    <p>Bachata Spice @ Flow Dance London</p>
+    </span>
+    </div>
+
+    </div>
+
+
+</div>
+
+
+
+<!-- UCL Salsa society mission -->
+
+  <div id="mission">
+    <h2><small>Our mission</small><br />UCL Salsa Society</h2>
+    <p>Salsa society aims to bring together all the different flavours of latin music and dance,providing its members with salsa and bachata classes and workshops, live music and dance performances, and lots of trips to various London clubs for social dancing. </p>
+<div class="space"></div>
+    <p>This year we are also introducing a monthly social dancing event open to our society and all UCL and IoE students. We also hope to attend some of the greatest salsa congresses in Europe. As a society, we take part in an annual Bloomsbury Theatre dance show.</p>
+<div class="space"></div>
+    <p>All levels of dancers welcome, from complete beginners to advanced!</p>
+<div class="space"></div>
+<div class="space"></div>
+<div class="space"></div>
+</div>
+
+<!-- class schedule -->
+  <img class="center" id="schedule" src="https://scontent-lht6-1.xx.fbcdn.net/v/t1.0-9/26001124_1167716100026834_515520540010122866_n.jpg?oh=1f4b12aa3e4e33be84bccece588f28a6&oe=5B47C127">
+<br>
+
+</body>
+
+
+</html>
