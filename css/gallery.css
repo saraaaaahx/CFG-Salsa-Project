@@ -15,9 +15,11 @@ div {
 .center {
   text-align: center;
   color: #8B0000;
+
 }
 
 /* gallery */
+
 
 div.gallery {
     position: relative;
@@ -27,6 +29,7 @@ div.gallery {
     padding: 25px;
     margin: 25px;
     border-radius: 5%;
+
 }
 
 div.gallery:hover {
@@ -51,7 +54,6 @@ div.gallery:hover {
   opacity: 0;
   background-color: #008CBA;
 }
-
 
 
 div.gallery img {
@@ -87,4 +89,21 @@ div.gallery img {
     content: "";
     display: table;
     clear: both;
+}
+
+
+@media all and (max-width:960px) {
+  #gallery {
+    width: 900px;
+   }
+}
+@media all and (max-width:720px) {
+   #gallery {
+     width: 660px;
+   }
+}
+@media all and (max-width:480px) {
+  #gallery {
+    width: 420px;
+  }
 }
