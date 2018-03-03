@@ -1,10 +1,31 @@
-#googleMap {
 
+body {
+  background-color: #202020;
+}
+
+.center {
+  font-size: 25px;
+  color: #B90000;
+  text-align: center;
 }
 
 
-.center {
+.header {
+  background-color: black;
+  position: absolute;
+  height: 80px;
+  width: 100%;
+}
 
-  font-size: 25px;
-  color: #B90000;
+.logo {
+  height:160px;
+  width: 190px;
+  border-radius: 50%;
+  position: relative;
+}
+
+
+
+#googleMap {
+
 }

@@ -10,13 +10,30 @@ div {
     border-radius: 5%;
 }
 
-
-
 .center {
   text-align: center;
   color: #8B0000;
-
 }
+
+body {
+  background-color: #202020;
+}
+
+.header {
+  background-color: black;
+  position: absolute;
+  height: 80px;
+  width: 100%;
+}
+
+.logo {
+  height:160px;
+  width: 190px;
+  border-radius: 50%;
+  position: relative;
+  border-top: 0px;
+}
+
 
 /* gallery */
 
