@@ -10,16 +10,17 @@ body {
   background-color: black;
 }
 
-.black-box {
-    width:1200px;
-  	height:500px;
-    background: black;
-    margin-top: 50px;
-    margin-right: 15px;
-    margin-left: 45px;
-    margin-bottom:100px;
+  .black-box {
 
+      height:500px;
+      background: black;
+      margin-top: 50px;
+      margin-bottom:70px;
+      background-color: black;
+
+    }
 }
+
 
 
 /*slideshow*/
@@ -75,8 +76,12 @@ img {vertical-align: middle;}
   to {opacity: 1}
 }
 
+
+
+
 /* On smaller screens, remove slideshow*/
-@media (max-width: 200px) {
+
+@media (max-width: 1000px) {
   .slideshow-container {
     display: none;
   }
@@ -84,9 +89,13 @@ img {vertical-align: middle;}
 
 
 
+
+
 .bg-image {
     background-image: url("https://i.pinimg.com/564x/ed/f4/4d/edf44dc4b70d04a311faf9eb09b31a0e.jpg");
-    min-height: 100px;
+    background-repeat: no-repeat;
+    background-size: auto;
+
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -217,13 +226,13 @@ p {
 /*social media tabs*/
 
 .sticky-container{
-  float: left;
+  /* float: left; */
     padding:0px;
     margin:0px;
     position:fixed;
-    right:-130px;
+    right:0px;
     top:230px;
-    width:210px;
+    width:80px;
     z-index: 1100;
 }
 
@@ -272,7 +281,11 @@ p {
 
 
 
+.row{
+  margin-left: auto;
+  margin-right: auto;
 
+}
 
 .arrow {
   text-align: center;
